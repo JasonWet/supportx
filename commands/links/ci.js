@@ -17,7 +17,7 @@ exports.run = async (client, message, args) => {
 exports.conf = {
     enabled: true,
     guildOnly: false,
-    aliases: [],
+    aliases: ['teamcity'],
 };
 
 // Sets the name, category, description and usage example for a command
