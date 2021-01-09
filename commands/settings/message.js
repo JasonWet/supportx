@@ -21,8 +21,8 @@ exports.conf = {
 
 // Sets the name, category, description and usage example for a command
 exports.help = {
-    name: "message",
+    name: "messages",
     category: "Settings",
     description: "Message Settings",
-    usage: "message"
+    usage: "messages [message ID]"
 };

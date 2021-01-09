@@ -21,8 +21,8 @@ exports.conf = {
 
 // Sets the name, category, description and usage example for a command
 exports.help = {
-    name: "channel",
+    name: "channels",
     category: "Settings",
     description: "Channel Settings",
-    usage: "channel"
+    usage: "channels [channel ID/Mention]"
 };

@@ -21,8 +21,8 @@ exports.conf = {
 
 // Sets the name, category, description and usage example for a command
 exports.help = {
-    name: "category",
+    name: "categories",
     category: "Settings",
     description: "Category Settings",
-    usage: "category"
+    usage: "categories [category ID]"
 };

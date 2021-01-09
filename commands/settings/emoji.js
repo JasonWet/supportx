@@ -21,8 +21,8 @@ exports.conf = {
 
 // Sets the name, category, description and usage example for a command
 exports.help = {
-    name: "emoji",
+    name: "emojis",
     category: "Settings",
     description: "Emoji Settings",
-    usage: "emoji"
+    usage: "emojis [emoji ID]"
 };

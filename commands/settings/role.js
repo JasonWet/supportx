@@ -21,8 +21,8 @@ exports.conf = {
 
 // Sets the name, category, description and usage example for a command
 exports.help = {
-    name: "role",
+    name: "roles",
     category: "Settings",
     description: "Role Settings",
-    usage: "role"
+    usage: "roles [role ID/Mention]"
 };
