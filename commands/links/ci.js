@@ -1,10 +1,11 @@
+const links = require('../../links.json')
 exports.run = async (client, message, args) => {
     /*
         Everything below this comment block is what will be run when a command is run.
 
         Ex: If someone runs `!template` it will run this file having it send a message to the channel that the command was run in saying `This is a Template Command`
      */
-    message.channel.send("Continuous Integration: https://ci.savagelabs.net/")
+    message.channel.send("Continuous Integration: " + links.ci)
 };
 
 /*
