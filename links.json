@@ -5,5 +5,10 @@
   "patreon": "https://patreon.com/ProSavage",
   "store": "https://store.savagelabs.net/",
   "website": "https://savagelabs.net/",
-  "wiki": "https://wiki.savagelabs.net/"
+  "wiki": "https://wiki.savagelabs.net/",
+  "installation": "https://wiki.savagelabs.net/en/Installation",
+  "commands": "https://wiki.savagelabs.net/en/Commands",
+  "permissions": "https://wiki.savagelabs.net/en/Permissions",
+  "placeholders": "https://wiki.savagelabs.net/en/Placeholders",
+  "default-files": "https://wiki.savagelabs.net/en/default-files"
 }
