@@ -25,8 +25,6 @@ module.exports = async (client, message) => {
     // Check whether the command, or alias, exist in the collections defined
         const cmd = client.commands.get(command) || client.commands.get(client.aliases.get(command));
 
-        client.logger.log(cmd)
-
         if (!message.guild && cmd.conf.guildOnly === true) return message.channel.send("This command can only be run in a guild.");
 
         try {
