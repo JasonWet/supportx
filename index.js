@@ -31,6 +31,11 @@ const init = async () => {
     // Find each sub directory within the commands directory
     await fs.readdirSync("./commands/").forEach(dir => {
         const cmdFiles = fs.readdirSync(`./commands/${dir}/`)
+        // DEBUG
+        if (config.debug === true) {
+            client.logger.debug('CMD FILES')
+            console.info(cmdFiles)
+        }
         client.logger.log(`Loading a total of ${cmdFiles.length} commands from the directory ${dir}`);
         cmdFiles.forEach(f => {
             // Find and sort all command files within the sub directories
@@ -42,11 +47,21 @@ const init = async () => {
                 if (props.init) {
                     props.init(client);
                 }
+                // Debug
+                if (config.debug === true) {
+                    client.logger.debug('COMMAND PROPS')
+                    console.info(props)
+                }
                 /*
                     Set the command names & aliases based off of the information provided in the command files
                 */
                 client.commands.set(props.help.name, props);
                 props.conf.aliases.forEach(alias => {
+                    // DEBUG
+                    if (config.debug === true) {
+                        client.logger.debug('ALIAS')
+                        console.info(alias)
+                    }
                     client.aliases.set(alias, props.help.name);
                 });
                 return false;
@@ -58,12 +73,20 @@ const init = async () => {
     });
     // EVENTS
     const evtFiles = await fs.readdirSync("./events/");
+    if (config.debug === true) {
+        client.logger.debug('EVENT FILES')
+        console.info(evtFiles)
+    }
     client.logger.log(`Loading a total of ${evtFiles.length} events.`);
     // Find each event file
     evtFiles.forEach(file => {
         const eventName = file.split(".")[0];
         client.logger.log(`Loading Event: ${eventName}`);
         const event = require(`./events/${file}`);
+        if (config.debug === true) {
+            client.logger.debug('EVENT')
+            console.info(event)
+        }
         // Bind the client to any event, before the existing arguments
         client.on(eventName, event.bind(null, client));
     });
