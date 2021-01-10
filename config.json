@@ -1,6 +1,6 @@
 {
   "prefix": "!",
-  "debug": true,
+  "debug": false,
   "token": "",
   "mongoUser": "",
   "mongoPassword": "",
