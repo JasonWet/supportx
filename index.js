@@ -4,6 +4,7 @@ const Discord = require("discord.js");
 const fs = require("fs");
 const Enmap = require("enmap");
 const config = require('./config.json')
+const token = require('./token.json')
 // This is your client. Some people call it `bot`
 const client = new Discord.Client({ partials: ['MESSAGE', 'CHANNEL', 'REACTION', 'GUILD_MEMBER', 'USER']});
 
@@ -68,18 +69,18 @@ const init = async () => {
     });
 
     // Connect to the mongodb server
-    await connect("...", {
-        useNewUrlParser: true,
-        useFindAndModify: false,
-        useUnifiedTopology: true
-    })
-        .catch((e) => {
-            return `Unable to connect to MongoDB: ${e}`
-        });
-    client.logger.log(`Connected to MongoDB`, "ready")
+//    await connect(settings.env.MONGOURI, {
+//        useNewUrlParser: true,
+//        useFindAndModify: false,
+//        useUnifiedTopology: true
+//    })
+//        .catch((e) => {
+//            return `Unable to connect to MongoDB: ${e}`
+//        });
+//    client.logger.log(`Connected to MongoDB`, "ready")
 
     // Login to the client using our private token from https://discord.com/developers/applications
-    client.login(config.token);
+    client.login(token.token);
     client.logger.log(`Client has been logged in`, "ready")
 
 // End top-level async/await function.

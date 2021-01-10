@@ -23,7 +23,6 @@ module.exports = async (client, message) => {
     const command = args.shift().toLowerCase();
 
     // Check whether the command, or alias, exist in the collections defined
-    if (client.commands.has(command)) {
         const cmd = client.commands.get(command) || client.commands.get(client.aliases.get(command));
 
         client.logger.log(cmd)
@@ -31,7 +30,8 @@ module.exports = async (client, message) => {
         if (!message.guild && cmd.conf.guildOnly === true) return message.channel.send("This command can only be run in a guild.");
 
         try {
-            client.logger.cmd(`[CMD] ${message.author.username} (${message.author.id}) ran command ${cmd}`);
+            console.info(cmd)
+            client.logger.cmd(`${message.author.username} (${message.author.id}) ran command ${cmd.help.name}`);
             cmd.run(client, message, args)
         } catch(err) {
             if (command === undefined) {
@@ -40,5 +40,4 @@ module.exports = async (client, message) => {
             } else
                 client.logger.error(err, "error")
         }
-    }
 };
