@@ -1,10 +1,19 @@
+const Discord = require('discord.js');
+const links = require('../../links.json');
+const config = require('../../config.json').settings;
 exports.run = async (client, message, args) => {
     /*
         Everything below this comment block is what will be run when a command is run.
 
         Ex: If someone runs `!template` it will run this file having it send a message to the channel that the command was run in saying `This is a Template Command`
      */
-    message.channel.send("GenBucketsX")
+    let embed = new Discord.MessageEmbed()
+        .setAuthor('GenBucketsX' + ' : ' + message.author.tag , message.author.avatarURL())
+        .setColor(config.embedColor)
+        .setDescription(`[Installation](${links.global.genbucketsx.installation})\n[Commands](${links.global.genbucketsx.commands})\n[Permissions](${links.global.genbucketsx.permissions})\n[Placeholders](${links.global.genbucketsx.placeholders})\n[Default Files](${links.global.genbucketsx.files})`)
+        .setTimestamp()
+        .setFooter('SupportX', client.user.avatarURL());
+    message.channel.send(embed);
 };
 
 /*

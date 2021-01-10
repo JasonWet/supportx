@@ -1,10 +1,19 @@
+const Discord = require('discord.js');
+const links = require('../../links.json');
+const config = require('../../config.json').settings;
 exports.run = async (client, message, args) => {
     /*
         Everything below this comment block is what will be run when a command is run.
 
         Ex: If someone runs `!template` it will run this file having it send a message to the channel that the command was run in saying `This is a Template Command`
      */
-    message.channel.send("OutpostX")
+    let embed = new Discord.MessageEmbed()
+        .setAuthor('OutpostX' + ' : ' + message.author.tag , message.author.avatarURL())
+        .setColor(config.embedColor)
+        .setDescription(`[Installation](${links.global.outpostx.installation})\n[Commands](${links.global.outpostx.commands})\n[Permissions](${links.global.outpostx.permissions})\n[Placeholders](${links.global.outpostx.placeholders})\n[Default Files](${links.global.outpostx.files})`)
+        .setTimestamp()
+        .setFooter('SupportX', client.user.avatarURL());
+    message.channel.send(embed);
 };
 
 /*
