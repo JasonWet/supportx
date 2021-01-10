@@ -30,7 +30,6 @@ module.exports = async (client, message) => {
         if (!message.guild && cmd.conf.guildOnly === true) return message.channel.send("This command can only be run in a guild.");
 
         try {
-            console.info(cmd)
             client.logger.cmd(`${message.author.username} (${message.author.id}) ran command ${cmd.help.name}`);
             cmd.run(client, message, args)
         } catch(err) {
