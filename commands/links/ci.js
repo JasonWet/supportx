@@ -5,7 +5,7 @@ exports.run = async (client, message, args) => {
 
         Ex: If someone runs `!template` it will run this file having it send a message to the channel that the command was run in saying `This is a Template Command`
      */
-    message.channel.send("Continuous Integration: " + links.ci)
+    message.channel.send("Continuous Integration: <" + links.ci + ">")
 };
 
 /*
