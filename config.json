@@ -2,5 +2,8 @@
   "prefix": "!",
   "token": "",
   "mongoUser": "",
-  "mongoPassword": ""
+  "mongoPassword": "",
+  "settings": {
+    "embedColor": ""
+}
 }
