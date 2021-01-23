@@ -2,9 +2,9 @@
 const Discord = require("discord.js");
 // Loads other used things in this file
 const fs = require("fs");
-const Enmap = require("enmap");
 const config = require('./config.json')
-const token = require('./token.json')
+require('dotenv').config();
+var token = process.env.token;
 // This is your client. Some people call it `bot`
 const client = new Discord.Client({ partials: ['MESSAGE', 'CHANNEL', 'REACTION', 'GUILD_MEMBER', 'USER']});
 
@@ -15,8 +15,8 @@ client.logger = require("./modules/Logger");
 require("./modules/functions.js")(client);
 
 // Commands and Aliases placed in a collection
-client.commands = new Enmap();
-client.aliases = new Enmap();
+client.commands = new Discord.Collection();
+client.aliases = new Discord.Collection();
 
 const init = async () => {
 
@@ -103,7 +103,7 @@ const init = async () => {
 //    client.logger.log(`Connected to MongoDB`, "ready")
 
     // Login to the client using our private token from https://discord.com/developers/applications
-    client.login(token.token);
+    client.login(token);
     client.logger.log(`Client has been logged in`, "ready")
 
 // End top-level async/await function.
