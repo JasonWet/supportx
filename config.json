@@ -5,6 +5,10 @@
   "mongoUser": "",
   "mongoPassword": "",
   "settings": {
-    "embedColor": ""
+    "embedColor": "",
+    "emojis": {
+      "ticket": "",
+      "suggestion": ""
+    }
 }
 }
