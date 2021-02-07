@@ -4,8 +4,8 @@ module.exports = async client => {
 
     // Set the bots activity
     client.user.setActivity(
-        `Built with TemplateBot`,
-        {type: "CUSTOM_STATUS"}
+        `SavageLabs`,
+        {type: "WATCHING"}
         );
 
 }
