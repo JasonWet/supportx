@@ -6,60 +6,81 @@
   "store": "https://store.savagelabs.net/",
   "website": "https://savagelabs.net/",
   "wiki": "https://wiki.savagelabs.net/",
-  "global": {
+  "resources": {
     "installation": "https://wiki.savagelabs.net/en/Installation",
     "commands": "https://wiki.savagelabs.net/en/Commands",
     "permissions": "https://wiki.savagelabs.net/en/Permissions",
     "placeholders": "https://wiki.savagelabs.net/en/Placeholders",
     "files": "https://wiki.savagelabs.net/en/default-files",
     "factionsx": {
-      "installation": "https://wiki.savagelabs.net/en/factions/installation",
-      "commands": "https://wiki.savagelabs.net/en/factions/commands",
-      "permissions": "https://wiki.savagelabs.net/en/factions/permissions",
-      "placeholders": "https://wiki.savagelabs.net/en/factions/placeholders",
-      "files": "https://wiki.savagelabs.net/en/factions/default-files"
+      "spigot": "",
+      "store": "",
+      "marketplace": "",
+      "installation": "https://wiki.savagelabs.net/en/factionsx/installation",
+      "commands": "https://wiki.savagelabs.net/en/factionsx/commands",
+      "permissions": "https://wiki.savagelabs.net/en/factionsx/permissions",
+      "placeholders": "https://wiki.savagelabs.net/en/factionsx/placeholders",
+      "files": "https://wiki.savagelabs.net/en/factionsx/default-files"
     },
     "skyblockx": {
-      "installation": "https://wiki.savagelabs.net/en/skyblock/installation",
-      "commands": "https://wiki.savagelabs.net/en/skyblock/commands",
-      "permissions": "https://wiki.savagelabs.net/en/skyblock/permissions",
-      "placeholders": "https://wiki.savagelabs.net/en/skyblock/placeholders",
-      "files": "https://wiki.savagelabs.net/en/skyblock/default-files"
+      "spigot": "",
+      "store": "",
+      "marketplace": "",
+      "installation": "https://wiki.savagelabs.net/en/skyblockx/installation",
+      "commands": "https://wiki.savagelabs.net/en/skyblockx/commands",
+      "permissions": "https://wiki.savagelabs.net/en/skyblockx/permissions",
+      "placeholders": "https://wiki.savagelabs.net/en/skyblockx/placeholders",
+      "files": "https://wiki.savagelabs.net/en/skyblockx/default-files"
     },
     "outpostx": {
-      "installation": "https://wiki.savagelabs.net/en/outpost/installation",
-      "commands": "https://wiki.savagelabs.net/en/outpost/commands",
-      "permissions": "https://wiki.savagelabs.net/en/outpost/permissions",
-      "placeholders": "https://wiki.savagelabs.net/en/outpost/placeholders",
-      "files": "https://wiki.savagelabs.net/en/outpost/default-files"
+      "spigot": "",
+      "store": "",
+      "marketplace": "",
+      "installation": "https://wiki.savagelabs.net/en/outpostx/installation",
+      "commands": "https://wiki.savagelabs.net/en/outpostx/commands",
+      "permissions": "https://wiki.savagelabs.net/en/outpostx/permissions",
+      "placeholders": "https://wiki.savagelabs.net/en/outpostx/placeholders",
+      "files": "https://wiki.savagelabs.net/en/outpostx/default-files"
     },
     "obbybreakerx": {
-      "installation": "https://wiki.savagelabs.net/en/obsidianbreaker/installation",
-      "commands": "https://wiki.savagelabs.net/en/obsidianbreaker/commands",
-      "permissions": "https://wiki.savagelabs.net/en/obsidianbreaker/permissions",
-      "placeholders": "https://wiki.savagelabs.net/en/obsidianbreaker/placeholders",
-      "files": "https://wiki.savagelabs.net/en/obsidianbreaker/default-files"
+      "spigot": "",
+      "store": "",
+      "marketplace": "",
+      "installation": "https://wiki.savagelabs.net/en/obbybreakerx/installation",
+      "commands": "https://wiki.savagelabs.net/en/obbybreakerx/commands",
+      "permissions": "https://wiki.savagelabs.net/en/obbybreakerx/permissions",
+      "placeholders": "https://wiki.savagelabs.net/en/obbybreakerx/placeholders",
+      "files": "https://wiki.savagelabs.net/en/obbybreakerx/default-files"
     },
     "leaderboardsx": {
-      "installation": "https://wiki.savagelabs.net/en/ftop/installation",
-      "commands": "https://wiki.savagelabs.net/en/ftop/commands",
-      "permissions": "https://wiki.savagelabs.net/en/ftop/permissions",
-      "placeholders": "https://wiki.savagelabs.net/en/ftop/placeholders",
-      "files": "https://wiki.savagelabs.net/en/ftop/default-files"
+      "spigot": "",
+      "store": "",
+      "marketplace": "",
+      "installation": "https://wiki.savagelabs.net/en/leaderboardsx/installation",
+      "commands": "https://wiki.savagelabs.net/en/leaderboardsx/commands",
+      "permissions": "https://wiki.savagelabs.net/en/leaderboardsx/permissions",
+      "placeholders": "https://wiki.savagelabs.net/en/leaderboardsx/placeholders",
+      "files": "https://wiki.savagelabs.net/en/leaderboardsx/default-files"
     },
     "genbucketsx": {
-      "installation": "https://wiki.savagelabs.net/en/genbuckets/installation",
-      "commands": "https://wiki.savagelabs.net/en/genbuckets/commands",
-      "permissions": "https://wiki.savagelabs.net/en/genbuckets/permissions",
-      "placeholders": "https://wiki.savagelabs.net/en/genbuckets/placeholders",
-      "files": "https://wiki.savagelabs.net/en/genbuckets/default-files"
+      "spigot": "",
+      "store": "",
+      "marketplace": "",
+      "installation": "https://wiki.savagelabs.net/en/genbucketsx/installation",
+      "commands": "https://wiki.savagelabs.net/en/genbucketsx/commands",
+      "permissions": "https://wiki.savagelabs.net/en/genbucketsx/permissions",
+      "placeholders": "https://wiki.savagelabs.net/en/genbucketsx/placeholders",
+      "files": "https://wiki.savagelabs.net/en/genbucketsx/default-files"
     },
     "collectorsx": {
-      "installation": "https://wiki.savagelabs.net/en/collectors/installation",
-      "commands": "https://wiki.savagelabs.net/en/collectors/commands",
-      "permissions": "https://wiki.savagelabs.net/en/collectors/permissions",
-      "placeholders": "https://wiki.savagelabs.net/en/collectors/placeholders",
-      "files": "https://wiki.savagelabs.net/en/collectors/default-files"
+      "spigot": "",
+      "store": "",
+      "marketplace": "",
+      "installation": "https://wiki.savagelabs.net/en/collectorsx/installation",
+      "commands": "https://wiki.savagelabs.net/en/collectorsx/commands",
+      "permissions": "https://wiki.savagelabs.net/en/collectorsx/permissions",
+      "placeholders": "https://wiki.savagelabs.net/en/collectorsx/placeholders",
+      "files": "https://wiki.savagelabs.net/en/collectorsx/default-files"
     }
   }
 }
