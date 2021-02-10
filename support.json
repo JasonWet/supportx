@@ -1,0 +1,29 @@
+{
+    "factionsx": {
+        "claiming": "Claim for your own faction by using `/f claim <faction> <radius>`\n\n**System Factions/Force Claiming**\n> **1.** Run `/fx bypass` to enable bypass mode\n> **2.** Use `/f claim <faction (warzone/safezone)> <radius>` to claim land for the defined faction",
+        "bypass": "To enable bypass mode use `/fx bypass`",
+        "help": "**Player Commands:** `/f help`\n**Admin Commands:** `/fx help`",
+        "chat": "**DeluxeChat**\nUse PAPI Placeholders to handle relation colors, faction tag/name or faction rank. Placeholders can be found [here](https://wiki.savagelabs.net/en/factionsx/placeholders)\n\n**EssentialsXChat/EssentialsChat**\nEnsure that the `chatHandledByAnotherPlugin` option is set to false.\n> **Example:**\n\n `\"chatHandledByAnotherPlugin\": false,\n\"chatFactionPlaceholder\": \"[FACTION]\",\n\"chatFactionReplaceString\": \"[RELATIONAL_COLOR][TAG] [FACTION] \",\n\"chatNoFactionReplaceString\": \" \",`\n\n EssentialsXChat/EssentialsChat do not directly support PAPI placeholders so you will need to use `[TAG]` and `[FACTION]` in the Chat section of the Essnetials Config.",
+        "dynmap": "",
+        "ftop": "",
+        "ftnt": ""
+      },
+      "skyblockx": {
+        "spigot": ""
+      },
+      "outpostx": {
+        "spigot": ""
+      },
+      "obbybreakerx": {
+        "spigot": ""
+      },
+      "leaderboardsx": {
+        "spigot": ""
+      },
+      "genbucketsx": {
+        "spigot": ""
+      },
+      "collectorsx": {
+        "config": "Config"
+      }
+}
