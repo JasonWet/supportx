@@ -1,7 +1,7 @@
 
 const Discord = require('discord.js');
-const links = require('../../links.json').resources.skyblockx;
-const support = require('../../support.json').skyblockx;
+const links = require('../../supportx-content/links.json').resources.skyblockx;
+const support = require('../../supportx-content/support.json').skyblockx;
 const config = require('../../config.json').settings;
 exports.run = async (client, message, args) => {
     /*

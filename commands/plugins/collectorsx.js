@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
-const links = require('../../links.json').resources.collectorsx;
-const support = require('../../support.json').collectorsx;
+const links = require('../../supportx-content/links.json').resources.collectorsx;
+const support = require('../../supportx-content/support.json').collectorsx;
 const config = require('../../config.json').settings;
 exports.run = async (client, message, args) => {
 

@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
-const links = require('../../links.json').resources.lockettex;
-const support = require('../../support.json').lockettex;
+const links = require('../../supportx-content/links.json').resources.lockettex;
+const support = require('../../supportx-content/support.json').lockettex;
 const config = require('../../config.json').settings;
 exports.run = async (client, message, args) => {
     /*

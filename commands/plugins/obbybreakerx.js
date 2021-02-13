@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
-const links = require('../../links.json').resources.obbybreakerx;
-const support = require('../../support.json').obbybreakerx;
+const links = require('../../supportx-content/links.json').resources.obbybreakerx;
+const support = require('../../supportx-content/support.json').obbybreakerx;
 const config = require('../../config.json').settings;
 exports.run = async (client, message, args) => {
     /*

@@ -1,0 +1,3 @@
+[submodule "supportx-content"]
+	path = supportx-content
+	url = git@github.com:JasonWet/supportx-content.git

@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
-const links = require('../../links.json').resources.genbucketsx;
-const support = require('../../support.json').genbucketsx;
+const links = require('../../supportx-content/links.json').resources.genbucketsx;
+const support = require('../../supportx-content/support.json').genbucketsx;
 const config = require('../../config.json').settings;
 exports.run = async (client, message, args) => {
     /*

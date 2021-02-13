@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
-const links = require('../../links.json').resources.factionsx;
-const support = require('../../support.json').factionsx;
+const links = require('../../supportx-content/links.json').resources.factionsx;
+const support = require('../../supportx-content/support.json').factionsx;
 const config = require('../../config.json').settings;
 exports.run = async (client, message, args) => {
     /*

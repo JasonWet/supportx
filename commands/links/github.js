@@ -1,4 +1,4 @@
-const links = require('../../links.json')
+const links = require('../../supportx-content/links.json')
 exports.run = async (client, message, args) => {
     /*
         Everything below this comment block is what will be run when a command is run.
