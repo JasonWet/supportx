@@ -1,10 +1,12 @@
 // Loads the discord.js library
 const Discord = require("discord.js");
+const { connect } = require('mongoose');
 // Loads other used things in this file
 const fs = require("fs");
 const config = require('./config.json')
 require('dotenv').config();
 var token = process.env.token;
+var mongodb = process.env.MONGODBURI;
 // This is your client. Some people call it `bot`
 const client = new Discord.Client({ partials: ['MESSAGE', 'CHANNEL', 'REACTION', 'GUILD_MEMBER', 'USER']});
 
@@ -92,15 +94,15 @@ const init = async () => {
     });
 
     // Connect to the mongodb server
-//    await connect(settings.env.MONGOURI, {
-//        useNewUrlParser: true,
-//        useFindAndModify: false,
-//        useUnifiedTopology: true
-//    })
-//        .catch((e) => {
-//            return `Unable to connect to MongoDB: ${e}`
-//        });
-//    client.logger.log(`Connected to MongoDB`, "ready")
+    await connect(mongodb, {
+        useNewUrlParser: true,
+        useFindAndModify: false,
+        useUnifiedTopology: true
+    })
+        .catch((e) => {
+            return `Unable to connect to MongoDB: ${e}`
+        });
+    client.logger.log(`Connected to MongoDB`, "ready")
 
     // Login to the client using our private token from https://discord.com/developers/applications
     client.login(token);
