@@ -1,14 +1,13 @@
 {
   "prefix": "!",
-  "debug": false,
   "token": "",
   "mongoUser": "",
   "mongoPassword": "",
   "settings": {
     "embedColor": "",
     "emojis": {
-      "ticket": "",
-      "suggestion": ""
+      "ticket": "606849672497332267",
+      "suggestion": "683552771420848150"
     }
 }
 }
